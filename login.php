@@ -18,23 +18,28 @@
 
         <!-- Login form start -->
         <div class="wrap">
-            <div id="main_login">
-            <div>
-                <h1 class="login_title">Sign in.</h1>
-            </div>
-                <form method="post" action="login.php">
-                    <table>
-                        <tr>
-                            <td><input type="text" name="login" placeholder="Username" required/></td>
-                        </tr>
-                        <tr style="width: 350px; height: 10px;">
-                            <td><input type="password" name="pass" placeholder="Password" required/></td>
-                        </tr>
-                        <tr>
-                            <td colspan="8"><input type="submit" name="sign in" value="login" /></td>
-                        </tr>
-                    </table>
-                </form> 
+            <div id="register">
+            <form action="register.php">
+                <div class="container">
+                    <h1>Register</h1>
+                    <p>Please fill in this form to create an account.</p>
+                    <hr>
+
+                    <label for="username"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="username" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="pass" required>
+
+                    <hr>
+
+                    <button type="submit" class="registerbtn">Register</button>
+                    </div>
+                
+                    <div class="container signin">
+                    <p>Already have an account? <a href="register.php">Sign in</a>.</p>
+                </div>
+                </form>
             </div>
         </div>
          <!-- Login form end -->
