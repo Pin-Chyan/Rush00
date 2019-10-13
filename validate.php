@@ -4,10 +4,10 @@
         return (isset($nb) and preg_match('/\d\d\d)(-)?\d\d\d(-)?\d\d\d\d/', $nb));
     }
 
-    function pass_match ($pass01, $pass02) {
-        if (!isset($pass01) or !isset($pass02))
+    function pass_match ($pass, $cmp_pass) {
+        if (!isset($pass) or !isset($cmp_pass))
             return false;
-        return ($pass01 === $pass02);
+        return ($pass === $cmp_pass);
     }
 
     function valid_email ($email) {
