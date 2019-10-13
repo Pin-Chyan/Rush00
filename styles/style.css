@@ -146,8 +146,8 @@ li.dropdown {
     margin-left: 60%;
 }
 
+/* universal wrap (own made) */
 
-/* store page uses */
 .wrap   {
     position: absolute;
     width: 2560px;
@@ -156,6 +156,8 @@ li.dropdown {
     background: black; */
     /* test cases for the wrap end */
 }
+
+/* store page uses */
 
 #main_store {
     position: relative;
@@ -171,5 +173,18 @@ li.dropdown {
     background-color: grey;
     opacity: 0.2;
     width: 590px;
+    height: 1238px;
+}
+
+
+/* cart page uses */
+
+#main_cart {
+    position: relative;
+    background-color: grey;
+    float: right;
+    margin-right: 150px;
+    opacity: 0.4;
+    width: 1000px;
     height: 1238px;
 }
