@@ -1,11 +1,12 @@
 <?php
+include "store_func.php";
 $host = "localhost:3306";
 $s01 = new mysqli($host,"server01","memes");
 
-mysqli_query($s01,"DROP DATABASE new");
-mysqli_query($s01,"CREATE DATABASE new");
+mysqli_query($s01,"DROP DATABASE death");
+mysqli_query($s01,"CREATE DATABASE death");
 
-$db = mysqli_connect($host,"server01","memes","new");
+$db = mysqli_connect($host,"server01","memes","death");
 
 //$id = "id INT(6)";
 //$name = "names TEXT(30)";
@@ -13,7 +14,7 @@ $db = mysqli_connect($host,"server01","memes","new");
 
 //store table
 $product = "product TEXT(200)";
-$category = "catergory TEXT(200)";
+$category = "category TEXT(200)";
 $price = "price INT(10)";
 mysqli_query($db,"CREATE TABLE store ($product,$category,$price)");
 //store created
@@ -41,4 +42,10 @@ $user = "user TEXT(30)";
 $item = "item TEXT(30)";
 $price = "price INT(10)";
 mysqli_query($db,"CREATE TABLE cart ($user,$item,$price)");
+mysqli_close($db);
+mysqli_close($s01);
+product_add("waifu","kawaii,red eyes,tights,long hair","6000");
+product_add("waifu","kawaii,blue eyes,big tiddies,short hair","9000");
+product_add("waifu","hotafuckingfire,red eyes,katana,long hair","60000");
+product_add("waifu","kawaii,red eyes,tights,long hair","6000");
 ?>
