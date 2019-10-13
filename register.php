@@ -33,15 +33,20 @@
                     <label for="username"><b>Username</b></label>
                     <input type="text" placeholder="Enter Username" name="username" required>
 
+                    <label for="address"><b>Address</b></label>
+                    <input type="text" placeholder="Enter Email" name="address" required>
+
+                    <label for="number"><b>Number</b></label>
+                    <input type="text" placeholder="Enter Phone number" name="number" required>
+
                     <label for="email"><b>Email</b></label>
                     <input type="text" placeholder="Enter Email" name="email" required>
-
-                    <label for="psw-repeat"><b>Repeat Password</b></label>
-                    <input type="password" placeholder="Repeat Password" name="pass-repeat" required>
 
                     <label for="psw"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="pass" required>
 
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="pass-repeat" required>
                     <hr>
 
                     <button type="submit" class="registerbtn">Register</button>
