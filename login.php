@@ -16,7 +16,10 @@
         <li><a href="#home">DONATE</a></li>
     </ul>
         <!-- nav bar end -->
+
+        <!-- Login form start -->
         <div class="log_in">
+        <h1 style="font-size: 50px">Sign in.</h1>
         <form method="post" action="login.php">
             <table>
                 <tr>
@@ -28,7 +31,8 @@
                     <td><input type="password" name="pass" placeholder="enter password" required/></td>
                 </tr>
             </table>
-          </form>  
+          </form> 
+          <!-- Login form end -->
         </div>
     </body>
 </html>
