@@ -5,9 +5,9 @@
             log-in
         </title>
     </head>
-    <body>
+    <body class="background">
         <div class="log_in">
-          <form metho="post" action="login.php">
+          <!-- <form method="post" action="login.php">
             <table>
                 <tr>
                     <td><b>Username:</b></td>
@@ -18,7 +18,7 @@
                     <td><input type="password" name="pass" placeholder="enter password" required/></td>
                 </tr>
             </table>
-          </form>  
+          </form>   -->
         </div>
     </body>
 </html>
