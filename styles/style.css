@@ -146,3 +146,30 @@ li.dropdown {
     margin-left: 60%;
 }
 
+
+/* store page uses */
+.wrap   {
+    position: absolute;
+    width: 2560px;
+    /* test cases for the wrap start */
+    /* opacity: 0; 
+    background: black; */
+    /* test cases for the wrap end */
+}
+
+#main_store {
+    position: relative;
+    background-color: grey;
+    float: right;
+    opacity: 0.4;
+    width: 1300px;
+    height: 1238px;
+}
+
+#side_store {
+    position: absolute;
+    background-color: grey;
+    opacity: 0.2;
+    width: 590px;
+    height: 1238px;
+}

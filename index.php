@@ -8,8 +8,8 @@
     <body class="background">
     <!-- nav bar start -->
     <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">Categories</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="store.php">Store</a></li>
         <li><a href="#home">Cart</a></li>
         <li><a href="login.php">Log-In</a></li>
         <li><a href="#home">DONATE</a></li>
@@ -19,7 +19,7 @@
     <!-- icons bar end -->
         <div class="h1_page">
         <ul>
-            <li id="h_button"><a href="#">Store</a></li>
+            <li id="h_button"><a href="store.php">Store</a></li>
         </ul>
         </div>
         <div class="h2_page">
