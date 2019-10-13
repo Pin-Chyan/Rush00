@@ -7,7 +7,7 @@
     </head>
     <body>
         <div class="log_in">
-          <form metho="post" action="login.php">
+          <form method="post" action="login.php">
             <table>
                 <tr>
                     <td><b>Username:</b></td>
