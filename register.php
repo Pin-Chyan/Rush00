@@ -42,10 +42,10 @@
                     <label for="email"><b>Email</b></label>
                     <input type="text" placeholder="Enter Email" name="email" required>
 
-                    <label for="psw"><b>Password</b></label>
+                    <label for="pass"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="pass" required>
 
-                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <label for="pass-repeat"><b>Repeat Password</b></label>
                     <input type="password" placeholder="Repeat Password" name="pass-repeat" required>
                     <hr>
 
