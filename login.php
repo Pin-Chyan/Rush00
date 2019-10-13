@@ -9,8 +9,8 @@
 
         <!-- nav bar start -->
     <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">Categories</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="store.php">Store</a></li>
         <li><a href="#home">Cart</a></li>
         <li><a href="login.php">Log-In</a></li>
         <li><a href="#home">DONATE</a></li>
