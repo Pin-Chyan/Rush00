@@ -11,8 +11,8 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#news">Categories</a></li>
         <li><a href="#home">Cart</a></li>
-        <li><a href="#home">Log-In</a></li>
-        <li><a href="#home"></a></li>
+        <li><a href="login.php">Log-In</a></li>
+        <li><a href="#home">DONATE</a></li>
     </ul>
     <!-- nar bar end -->
 
@@ -26,7 +26,7 @@
         <ul>
             <li id="h_button"><a href="login.php">Log-In</a></li>
         </ul>
-        </div>
+        </div>            
     <!-- icons bar end -->
     </body>
 </html>
