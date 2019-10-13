@@ -29,6 +29,12 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
+/* header image */
+
+.h_image {
+    height: 50px;
+}
+
 /* button */
 
 ul {
@@ -136,16 +142,6 @@ li.dropdown {
     text-decoration: none;
 }
 
-/* log-in page uses */
-.log_in {
-    position: absolute;
-    width: 550px;
-    height: 1000px;
-    background-color: grey;
-    margin-top: 50px;
-    margin-left: 60%;
-}
-
 /* universal wrap (own made) */
 
 .wrap   {
@@ -187,4 +183,32 @@ li.dropdown {
     opacity: 0.4;
     width: 1000px;
     height: 1238px;
+}
+
+/* login page uses */
+
+#main_login {
+    position: relative;
+    background-color: grey;
+    float: right;
+    margin-right: 150px;
+    opacity: 0.4;
+    width: 1000px;
+    height: 1238px;
+}
+
+.login_title{
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 75px;
+}
+input[type=text], input[type=password] {
+    border-radius: 14px;
+    padding: 30px;
+    width: 350px;
+    height: 10px;
+    text-align: center;
+    margin-left: 20px;
 }

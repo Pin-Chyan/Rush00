@@ -11,7 +11,7 @@
         <li><a href="index.php">Home</a></li>
         <li><a href="store.php">Store</a></li>
         <li><a href="login.php">Log-In</a></li>
-        <li><a href="cart.php">Cart</a></li>
+        <li><a href="cart.php">Cart</a></li>0
     </ul>
     <!-- nar bar end -->
 
