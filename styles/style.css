@@ -248,7 +248,7 @@ input[type=text], input[type=password] {
   
   /* Set a style for the submit button */
   .registerbtn {
-    background-color: blue;
+    background-color: black;
     color: white;
     padding: 16px 20px;
     margin: 8px 0;
