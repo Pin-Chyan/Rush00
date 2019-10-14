@@ -21,7 +21,7 @@ $price = "price INT(20)";
 $img = "img TEXT(50)";
 mysqli_query($db,"CREATE TABLE store ($product,$id,$category,$price,$img)");
 //defaults
-product_add("Toradora","Romantic,Comedy,Anime","200","n\a");
+product_add("Toradora","Romantic,Comedy,Anime","200","toradora.jpg");
 product_add("Vinland saga","Action,Adventure,Anime","120","n\a");
 product_add("How not to summon a demon lord","Isekai,Comedy,Fantasy,Anime","175","n\a");
 product_add("Beyond the boundary","Romantic,Action,Anime","185","n\a");
@@ -65,4 +65,5 @@ mysqli_query($db,"CREATE TABLE cart ($user,$item,$quan,$price)");
 mysqli_close($db);
 mysqli_close($s01);
 
+//Category database
 ?>
