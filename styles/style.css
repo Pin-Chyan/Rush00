@@ -247,6 +247,41 @@ li.dropdown {
     margin-top: 300px;
 }
 
+.navcat {
+	display: block;
+	background-color: #f2f2f2;
+	position: fixed;
+	margin-bottom: 600px;
+    width: 600px;
+    height: 850px;
+	font-size: 30px;
+	margin-top: 0;
+}
+
+.navcat a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 15px 15px;
+	text-decoration: none;
+}
+
+.navcat p {
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 15px 15px;
+	text-decoration: none;
+	font-size: 15px;
+	margin: 0;
+}
+
+.navcat a:hover {
+	background: orange;
+	color: white;
+}
+
 .h2_page {
     position: absolute;
     background-color: #333;
