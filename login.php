@@ -1,4 +1,6 @@
-
+<?php
+    include("start_session.php");
+?>
 
 <link rel="stylesheet" href="styles/style.css">
 <html>
@@ -28,10 +30,10 @@
                     <hr>
 
                     <label for="username"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="username" required>
+                    <input type="text" placeholder="Enter Username" name="username" maxlength="50" required>
 
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="pass" required>
+                    <label for="pass"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="pass" maxlength="50" required>
 
                     <hr>
 
