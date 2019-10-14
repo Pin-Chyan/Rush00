@@ -1,6 +1,6 @@
 <?php
 function user_add($username,$name,$surname,$address,$number,$email,$password){
-    $db = mysqli_connect("localhost:3306","server01","memes","death");
+    if (($db = mysqli_connect("localhost:3306","server01","memes","death")))
     $part1 = "(username,name,surname,address,contact,email,password)";
     $part2 = "('$username','$name','$surname','$address','$number','$email','$password')";
     mysqli_query($db,"INSERT INTO users $part1 VALUES $part2");
@@ -23,5 +23,5 @@ function get_val($username,$value){
     echo $ret2['$value'];
     mysqli_close($db);
 }
-get_val("cyko","password");
+//get_val("cyko","password");
 ?>
