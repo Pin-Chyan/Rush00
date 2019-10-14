@@ -15,4 +15,5 @@ function get_specfic($f_tag,$table,$value,$l_tag){
     }
     mysqli_close($db);
 }
+
 ?>
