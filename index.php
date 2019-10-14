@@ -12,7 +12,7 @@
             Home Page
         </title>
     </head>
-    <body class="background">
+    <body class="background" style="min-width: 1000px;">
     <!-- nav bar start -->
     <ul>
         <li><a href="index.php">Home</a></li>
@@ -24,16 +24,23 @@
     <!-- nar bar end -->
 
     <!-- icons bar end -->
-        <div class="h1_page">
-        <ul>
-            <li id="h_button"><a href="store.php">Store</a></li>
-        </ul>
+    <div class="wrapper">
+        <div class="left">
+        <img style="width: 1100px; height: 1000px;" src = "https://images2.alphacoders.com/246/246622.jpg">
         </div>
-        <div class="h2_page">
-        <ul>
-            <li id="h_button"><a href="login.php">Log-In</a></li>
-        </ul>
-        </div>            
+        <div class="right">
+            <div class="h1_page">
+             <ul>
+                  <li id="h_button"><a href="store.php">Store</a></li>
+               </ul>
+            </div>
+            <div class="h2_page">
+             <ul>
+                <li id="h_button"><a href="login.php">Log-In</a></li>
+            </ul>
+            </div>    
+        </div>        
+    </div>
     <!-- icons bar end -->
     </body>
 </html>

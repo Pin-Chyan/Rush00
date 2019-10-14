@@ -70,7 +70,7 @@ li {
 /* homepage button use */
 #h_button {
     margin-left: 21%;
-    margin-top: 18px;
+    margin-top: 10px;
 }
   
 li a, .dropbtn {
@@ -117,11 +117,19 @@ li.dropdown {
 /* main body background */
 .background {
     position: relative;
-    background-image: url(https://images2.alphacoders.com/246/246622.jpg);
     background-color: rgb(232, 232, 239);
     background-size: 1500px;
     background-repeat: no-repeat;
     background-position: center;
+}
+.wrapper {
+    width: 1000px; 
+    overflow: hidden;
+}
+
+.left {
+    width: 1000px; 
+    float:left;
 }
 
 .h1_page {
@@ -239,6 +247,10 @@ input[type=text], input[type=password] {
   .container {
     padding: 16px;
     background-color: white;
+    vertical-align: middle;
+    margin-left: 10%;
+    margin-right: auto;
+    position: absolute;
   }
   
   /* Full-width input fields */
