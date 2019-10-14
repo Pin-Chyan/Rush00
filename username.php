@@ -38,7 +38,21 @@
                 <button type="submit" class="registerbtn" name="delete"><a href="delete_user.php">Delete-Account :(</a></button>
                 <button type="submit" class="registerbtn" name="pass-update"><a href="auth.php">Change-Password</a></button>
                 <button type="submit" class="registerbtn" name="usr-update"><a href="username.php">Change-Username</a></button>
+                <div>
+                    <form action="username.php" method="post">
+                    New Username:<br>
+                <input type="text" name="firstname">
+                    <input type="submit" name="change" value="change" required>
+                </form> 
+                </div>
             </div>
         </div>
     </body>
-</html>
+
+<?php
+    if (isset($_POST['change'])) {
+        user_edit($_SESSION['user_id'],'username', $_POST['firstname']);
+        $_SESSION['user_id'] = $_POST['firstname'];
+        header('location: logged_users.php');
+    }
+?>

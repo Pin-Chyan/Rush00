@@ -38,7 +38,28 @@
                 <button type="submit" class="registerbtn" name="delete"><a href="delete_user.php">Delete-Account :(</a></button>
                 <button type="submit" class="registerbtn" name="pass-update"><a href="auth.php">Change-Password</a></button>
                 <button type="submit" class="registerbtn" name="usr-update"><a href="username.php">Change-Username</a></button>
+                <div>
+                    <form action="auth.php" method="post" required>
+                    Old Password:<br>
+                <input type="password" name="oldpw" required>
+                <br>
+                New Password:<br>
+                <input type="password" name="newpw">
+                <br><br>
+                    <input type="submit" value="Change" name="Change">
+                </form> 
+                </div>
             </div>
         </div>
     </body>
-</html>
+<?php
+    if (isset($_POST['Change'])) {
+        if (user_pass($_SESSION['user_id'], hash("sha1", $_POST['oldpw']))) {
+            user_edit($_SESSION['user_id'],'password', hash("sha1", $_POST['newpw']));
+            header('location: logged_users.php');
+        }
+        else {
+            echo "<script>alert('Incorrect Password');</script>";
+        }
+    }
+?>
