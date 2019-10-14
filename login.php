@@ -1,5 +1,6 @@
 <?php
-    include("start_session.php");
+    require('database/users.php');
+    session_start();
 ?>
 
 <link rel="stylesheet" href="styles/style.css">
@@ -37,7 +38,7 @@
 
                     <hr>
 
-                    <button type="submit" class="registerbtn">Sign in</button>
+                    <button type="submit" name="login" class="registerbtn">Sign in</button>
                     </div>
                 
                     <div class="container signin">
@@ -49,3 +50,19 @@
          <!-- Login form end -->
     </body>
 </html>
+
+<?php
+    if (isset($_SESSION['user_id'])) {
+        header('location: index.php');
+    }
+
+    if (isset($_POST['login'])) {
+        $pw = $_POST['pass'];
+        $usr = $_POST['username'];
+
+        if (if_registered($usr) and user_pass($usr, hash("sha1", $pw))) {
+            $_SESSION['user_id'] = $usr;
+            $_SESSION['loggin_in'] = true;
+        }
+    }
+?>
