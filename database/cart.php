@@ -24,4 +24,21 @@ function add_cart($item){
     }
     mysqli_close($db);
 }
+
+// function del_cart($item){
+//     $db = mysqli_connect("localhost:3306","server01","memes","death");
+//     $ret = mysqli_query($db,"SELECT item, quantity FROM cart");
+//     $not_in = 0;
+//     if (mysqli_num_rows($ret) > 0){
+//         while (($arr = mysqli_fetch_array($ret))){
+//             if ($arr['item'] == $item && $arr['quantity'] > 1){
+//                 mysqli_query($db,"UPDATE cart SET quantity = quantity - 1 WHERE item='$item'");
+//             }
+//             else if ($arr['item'] == $item && $arr['quantity'] <= 1){
+//                 mysqli_query($db,"DELETE FROM cart WHERE item='$item'");
+//             }
+//         }
+//     }
+//     mysqli_close($db); 
+// }
 ?>
