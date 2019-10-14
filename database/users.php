@@ -58,5 +58,4 @@ function is_admin($username)
     mysqli_close($db);
     return(0);
 }
-
 ?>
