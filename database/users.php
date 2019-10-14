@@ -18,10 +18,10 @@ function user_edit($username,$target,$value){
 }
 function get_val($username,$value){
     $db = mysqli_connect("localhost:3306","server01","memes","death");
-    $ret = mysqli_query($db,"SELECT password FROM users WHERE='cyko'");
+    $ret = mysqli_query($db,"SELECT $value FROM users WHERE username='$username'");
     $ret2 = mysqli_fetch_array($ret);
-    echo $ret2['$value'];
+    echo $ret2[$value];
     mysqli_close($db);
 }
-//get_val("cyko","password");
+
 ?>
