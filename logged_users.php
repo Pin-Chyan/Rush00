@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="styles/style.css">
 <?php
+    session_start();
     include('database/users.php');
 ?>
 <html>
