@@ -29,22 +29,30 @@
             <div class="l_center">
                 <h1 class="h_title">User Profile</h1>
                 <?php
-                    echo "Username: ";
                     get_specfic("<tag>","users","username","</tag><br >", $_SESSION['user_id']);
-                    echo "Name: ";
                     get_specfic("<tag>","users","name","</tag><br >", $_SESSION['user_id']);
-                    echo "Surname: ";
                     get_specfic("<tag>","users","surname","</tag><br >", $_SESSION['user_id']);
-                    echo "Email: ";
                     get_specfic("<tag>","users","email","</tag><br >", $_SESSION['user_id']);
-                    echo "Contact: ";
-                    get_specfic("<tag>","users","contact","</tag><br >", $_SESSION['user_id']);
                 ?>
                 <button type="submit" class="registerbtn" name="reg_user" value="reg"><a href="logout_user.php">Log-Out :(</a></button>
                 <button type="submit" class="registerbtn" name="delete"><a href="delete_user.php">Delete-Account :(</a></button>
                 <button type="submit" class="registerbtn" name="pass-update"><a href="auth.php">Change-Password</a></button>
                 <button type="submit" class="registerbtn" name="usr-update"><a href="username.php">Change-Username</a></button>
+                <div>
+                    <form action="username.php" method="post">
+                    New Username:<br>
+                <input type="text" name="firstname">
+                    <input type="submit" name="change" value="change" required>
+                </form> 
+                </div>
             </div>
         </div>
     </body>
-</html>
+
+<?php
+    if (isset($_POST['change'])) {
+        user_edit($_SESSION['user_id'],'username', $_POST['firstname']);
+        $_SESSION['user_id'] = $_POST['firstname'];
+        header('location: logged_users.php');
+    }
+?>
