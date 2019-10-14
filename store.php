@@ -45,10 +45,10 @@ include "database/cart.php";
                 <div class="wrapper">
                     <h1 class="h_title">Products</h1>
                     <div class="left_p">
-                        <a href="store.php" if onclick=<?php add_cart('Toradora');?>>ToraDora</a>
-                        <a href="store.php" if onclick=<?php //add_cart('Vinland saga');?>>Vinland saga</a>
-                        <a href="store.php" if onclick=<?php //add_cart('How not to summon a demon lord');?>>How not to summon a demon lord</a>
-                        <a href="store.php" if onclick=<?php add_cart('Beyond the boundary');?>>Beyond the boundary</a>
+                        <a href="store.php" <element onclick=<?php add_cart('Toradora');?>>ToraDora</a>
+                        <a href="store.php" onclick=<?php add_cart('Vinland saga');?>>Vinland saga</a>
+                        <a href="store.php" onclick=<?php add_cart('How not to summon a demon lord');?>>How not to summon a demon lord</a>
+                        <a href="store.php" onclick=<?php add_cart('Beyond the boundary');?>>Beyond the boundary</a>
                     </div>
                     <div class="right_p">
                         <a href="store.php" onclick=<?php add_cart('Violet evergarden');?>>Violet Evergarden</a>
