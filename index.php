@@ -25,7 +25,6 @@
         <li><a href="cart.php" style="float:right; color:#fc7e37;">
 			<img src="images/cart.png" style="height:20px; margin: 0 10px;
 			padding:0;" alt="cart">My Cart (<?=$_SESSION['total_items'];?>) - R<?=$_SESSION['total_price'];?></a></li>
-        <li><a href="admin.php">AdminTest</a></li>
     </ul>
     <!-- nar bar end -->
 

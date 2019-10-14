@@ -21,14 +21,14 @@ $price = "price INT(20)";
 $img = "img TEXT(50)";
 mysqli_query($db,"CREATE TABLE store ($product,$id,$category,$price,$img)");
 //defaults
-product_add("Toradora","Romantic,Comedy","200","n\a");
-product_add("Vinland saga","Action,Adventure","120","n\a");
-product_add("How not to summon a demon lord","Isekai,Comedy,Fantasy","175","n\a");
-product_add("Beyond the boundary","Romantic,Action","185","n\a");
-product_add("Violet evergarden","Romantic,Tragedy","195","n\a");
-product_add("Shield Hero","Adventure,Isekai,Action","175","n\a");
-product_add("Konosuba","Adventure,Isekai,Comedy","140","n\a");
-product_add("Kimetsu No Yaiba","Adventure,Action","140","n\a");
+product_add("Toradora","Romantic,Comedy,Anime","200","n\a");
+product_add("Vinland saga","Action,Adventure,Anime","120","n\a");
+product_add("How not to summon a demon lord","Isekai,Comedy,Fantasy,Anime","175","n\a");
+product_add("Beyond the boundary","Romantic,Action,Anime","185","n\a");
+product_add("Violet evergarden","Romantic,Tragedy,Anime","195","n\a");
+product_add("Shield Hero","Adventure,Isekai,Action,Manga","175","n\a");
+product_add("Konosuba","Adventure,Isekai,Comedy,Anime","140","n\a");
+product_add("Kimetsu No Yaiba","Adventure,Action,Manga","140","n\a");
 //store created
 
 //user table
