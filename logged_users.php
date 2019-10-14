@@ -2,11 +2,12 @@
 <?php
     session_start();
     include('database/users.php');
+    include('database/norm_users.php');
 ?>
 <html>
     <head>
         <title>
-            User Profile4
+            User Profile3
         </title>
     </head>
     <body class="background">
@@ -28,8 +29,12 @@
             <div class="l_center">
                 <h1 class="h_title">User Profile</h1>
                 <?php
-                    get_specific("<table>", "users", "username", "</table>");
+                    get_specfic("<tag>","users","username","</tag><br >", $_SESSION['user_id']);
+                    get_specfic("<tag>","users","name","</tag><br >", $_SESSION['user_id']);
+                    get_specfic("<tag>","users","surname","</tag><br >", $_SESSION['user_id']);
+                    get_specfic("<tag>","users","email","</tag><br >", $_SESSION['user_id']);
                 ?>
+                <button type="submit" class="registerbtn" name="reg_user" value="reg"><a href="logout_user.php">Log-Out :(</a></button>
             </div>
         </div>
     </body>
