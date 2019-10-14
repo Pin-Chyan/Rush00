@@ -8,7 +8,7 @@ function product_add($name,$cats,$price){
 }
 function product_del($name){
     $db = mysqli_connect("localhost:3306","server01","memes","death");
-    mysqli_query($db,"DELETE FROM store WHERE name=$name");
+    mysqli_query($db,"DELETE FROM store WHERE product='$name'");
     mysqli_close($db);
 }
 function product_edit($name,$value,$target){

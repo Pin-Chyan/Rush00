@@ -1,5 +1,6 @@
 <?php
 include "store_func.php";
+include "users.php";
 $host = "localhost:3306";
 $s01 = new mysqli($host,"server01","memes");
 
@@ -18,17 +19,27 @@ $id = "id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY";
 $category = "category TEXT(200)";
 $price = "price INT(10)";
 mysqli_query($db,"CREATE TABLE store ($product,$id,$category,$price)");
+//defaults
+product_add("waifu","kawaii,red eyes,tights,long hair","6000");
+product_add("waifu_1","kawaii,blue eyes,big tiddies,short hair","9000");
+product_add("waifu_2","hotafuckingfire,red eyes,katana,long hair","60000");
+product_add("waifu_3","kawaii,red eyes,tights,long hair","6000");
 //store created
 
 //user table
+$username = "username TEXT(50)";
 $name = "name TEXT(50)";
 $surname = "surname TEXT(50)";
-$username = "username TEXT(50)";
 $address = "address TEXT(50)";
 $number = "contact TEXT(10)";
 $email = "email TEXT(50)";
 $password = "password TEXT(50)";
 mysqli_query($db,"CREATE TABLE users ($username,$name,$surname,$address,$number,$email,$password)");
+//defaults
+user_add("waifu","asuna","yuuki","aincrad floor 77","1234567890","asunayuuki@swordart.com","iheartkirito");
+user_add("apex","p","c","N/a","1234567890","PC@csgo.com","waifuisjanedearcfromfate");
+user_add("cyko","liam","krie","kuilsriver","1234567890","CYKO@backend.com","ilikewaifusocks");
+user_add("banana","hand","ofbananas","tree 47 branch 9","1234567890","banana@outsideonabranch.com","R15perkilo");
 //user table created
 
 //History Pay
@@ -45,8 +56,5 @@ $price = "price INT(10)";
 mysqli_query($db,"CREATE TABLE cart ($user,$item,$price)");
 mysqli_close($db);
 mysqli_close($s01);
-product_add("waifu","kawaii,red eyes,tights,long hair","6000");
-product_add("waifu","kawaii,blue eyes,big tiddies,short hair","9000");
-product_add("waifu","hotafuckingfire,red eyes,katana,long hair","60000");
-product_add("waifu","kawaii,red eyes,tights,long hair","6000");
+
 ?>
