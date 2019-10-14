@@ -1,8 +1,12 @@
 <?php
-    // session_start();
-
-    // if ($_SESSION['user_id']) {
-    //     $id = $_SESSION['user_id'];
+	session_start();
+	if(!isset($_SESSION['cart']))
+	{
+		$_SESSION['cart'] = array();
+		$_SESSION['total_items'] = 0;
+        $_SESSION['total_price'] = '0.00';
+        include("cart_func.php");
+	}
 ?>
 
 <link rel="stylesheet" href="styles/style.css">
