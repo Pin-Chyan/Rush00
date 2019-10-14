@@ -1,4 +1,5 @@
 <?php
+
 function user_add($username,$name,$surname,$address,$number,$email,$password,$admin){
     if (($db = mysqli_connect("localhost:3306","server01","memes","death")))
     $part1 = "(username,name,surname,address,contact,email,password,admin)";
@@ -29,11 +30,11 @@ function if_registered($username){
     while(($ret2 = mysqli_fetch_array($ret))){
         if ($ret2['username'] == $username){
             mysqli_close($db);
-            return(1);
+            return(true);
         }
     }
     mysqli_close($db);
-    return(0);
+    return(false);
 }
 function user_pass($username,$hased_pass){
     $db = mysqli_connect("localhost:3306","server01","memes","death");
@@ -41,9 +42,9 @@ function user_pass($username,$hased_pass){
     $arr = mysqli_fetch_array($ret);
     if ($arr['password'] == $hased_pass){
         mysqli_close($db);
-        return (1);
+        return (true);
     }
     mysqli_close($db);
-    return (0);
+    return (false);
 }
 ?>
