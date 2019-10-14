@@ -13,4 +13,6 @@
     function valid_email ($email) {
         return ($email and preg_match('/[^@]+@[^\.]+\..+/',$email));
     }
+
+    
 ?>

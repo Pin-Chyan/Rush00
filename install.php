@@ -34,15 +34,15 @@ $surname = "surname TEXT(50)";
 $address = "address TEXT(50)";
 $number = "contact TEXT(10)";
 $email = "email TEXT(50)";
-$password = "password TEXT(50)";
+$password = "password TEXT(50000)";
 $admin = "overlord TEXT(5)";
 mysqli_query($db,"CREATE TABLE users ($username,$name,$surname,$address,$number,$email,$password,$admin)");
 //defaults
-user_add("WingarKorin","Heini","Barnard","Knowhere","0987654321","hbarnardWTC@yeet.com","inverse","yes");
-user_add("waifu","asuna","yuuki","aincrad floor 77","1234567890","asunayuuki@swordart.com","iheartkirito","no");
-user_add("apex","p","c","N/a","1234567890","PC@csgo.com","waifuisjanedearcfromfate","yes");
-user_add("cyko","liam","krie","kuilsriver","1234567890","CYKO@backend.com","ilikewaifusocks","yes");
-user_add("banana","hand","ofbananas","tree 47 branch 9","1234567890","banana@outsideonabranch.com","haha","yes");
+user_add("WingarKorin","Heini","Barnard","Knowhere","0987654321","hbarnardWTC@yeet.com",hash("sha1","inverse"),"yes");
+user_add("waifu","asuna","yuuki","aincrad floor 77","1234567890","asunayuuki@swordart.com",hash("sha1","iheartkirito"),"no");
+user_add("apex","p","c","N/a","1234567890","PC@csgo.com",hash("sha1","waifuisjanedearcfromfate"),"yes");
+user_add("cyko","liam","krie","kuilsriver","1234567890","CYKO@backend.com",hash("sha1","ilikewaifusocks"),"yes");
+user_add("banana","hand","ofbananas","tree 47 branch 9","1234567890","banana@outsideonabranch.com",hash("sha1","haha"),"yes");
 //user table created
 
 //History Pay

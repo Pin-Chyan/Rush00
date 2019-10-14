@@ -62,7 +62,6 @@
 
         if (if_registered($usr) and user_pass($usr, hash("sha1", $pw))) {
             $_SESSION['user_id'] = $usr;
-            $_SESSION['loggin_in'] = true;
             header('location: index.php');
         }
     }
