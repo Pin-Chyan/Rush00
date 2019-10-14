@@ -21,10 +21,14 @@ $price = "price INT(20)";
 $img = "img TEXT(50)";
 mysqli_query($db,"CREATE TABLE store ($product,$id,$category,$price,$img)");
 //defaults
-product_add("waifu","kawaii,red eyes,tights,long hair","6000","asuna.png");
-product_add("waifu_1","kawaii,blue eyes,no tiddies,short hair","9000","pc.png");
-product_add("waifu_2","hotasfuckingfire,red eyes,katana,long hair","600","cyko.png");
-product_add("waifu_3","kawaii,red eyes,tights,long hair","6000","banana.png");
+product_add("Toradora","Romantic,Comedy,Anime","200","n\a");
+product_add("Vinland saga","Action,Adventure,Anime","120","n\a");
+product_add("How not to summon a demon lord","Isekai,Comedy,Fantasy,Anime","175","n\a");
+product_add("Beyond the boundary","Romantic,Action,Anime","185","n\a");
+product_add("Violet evergarden","Romantic,Tragedy,Anime","195","n\a");
+product_add("Shield Hero","Adventure,Isekai,Action,Manga","175","n\a");
+product_add("Konosuba","Adventure,Isekai,Comedy,Anime","140","n\a");
+product_add("Kimetsu No Yaiba","Adventure,Action,Manga","140","n\a");
 //store created
 
 //user table
