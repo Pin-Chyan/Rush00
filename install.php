@@ -1,6 +1,6 @@
 <?php
-include "store_func.php";
-include "users.php";
+include "./database/store_func.php";
+include "./database/users.php";
 $host = "localhost:3306";
 $s01 = new mysqli($host,"server01","memes");
 
