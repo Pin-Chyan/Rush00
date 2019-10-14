@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            log-in
+            Log-in
         </title>
     </head>
     <body class="background">
