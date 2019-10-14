@@ -21,6 +21,7 @@
                 <form action="register.php" method="post">
                 <div class="container">
                 </div>
+                </form>
             </div>
         </div>
         <!-- wrap end -->
