@@ -32,7 +32,9 @@ footer, header, hgroup, menu, nav, section {
 /* header image */
 
 .h_image {
-    height: 50px;
+    margin-top: -55px;
+    height: 150px;
+    width: 200px;
 }
 
 /* bold format */
@@ -47,7 +49,16 @@ b {
 }
 
 .b_text {
-    font-size: 15px;
+    font-size: 25px;
+}
+
+.h_title{
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 75px;
+    color: rgb(139, 139, 143);
 }
 
 /* button */
@@ -180,19 +191,21 @@ li.dropdown {
 
 #main_store {
     position: relative;
-    background-color: grey;
+    background-color: rgb(241, 241, 245);
     float: right;
-    opacity: 0.4;
-    width: 1300px;
+    opacity: 1;
+    width: 1000px;
     height: 1238px;
+    margin-right: 150px;
 }
 
 #side_store {
     position: absolute;
-    background-color: grey;
-    opacity: 0.2;
-    width: 590px;
+    background-color: rgb(241, 241, 245);
+    opacity: 1;
+    width: 500px;
     height: 1238px;
+    margin-left: 50px;
 }
 
 
@@ -200,10 +213,10 @@ li.dropdown {
 
 #main_cart {
     position: relative;
-    background-color: grey;
+    background-color: rgb(241, 241, 245);
     float: right;
     margin-right: 150px;
-    opacity: 0.4;
+    opacity: 1;
     width: 1000px;
     height: 1238px;
 }

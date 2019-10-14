@@ -8,6 +8,7 @@
     <body class="background">
         <!-- nav bar start -->
         <ul>
+            <!-- <li><a href="index.php"><img class="h_image" src="images/logo.png"></a></li> -->
             <li><a href="index.php">Home</a></li>
             <li><a href="store.php">Store</a></li>
             <li><a href="login.php">Log-In</a></li>
@@ -18,10 +19,10 @@
         <!-- wrap start -->
         <div class="wrap">
             <div id="side_store">
-                <p><font color="red">left</font></p>
+                <h1 class="h_title">Category</h1>
             </div>
             <div id="main_store">
-                <p><font color="red">right</font></p>
+                <h1 class="h_title">Products</h1>
             </div>
         </div>
         <!-- wrap end -->

@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            log-in
+            Log-in
         </title>
     </head>
     <body class="background">
@@ -11,7 +11,8 @@
             <li><a href="index.php">Home</a></li>
             <li><a href="store.php">Store</a></li>
             <li><a href="login.php">Log-In</a></li>
-            <li><a href="cart.php"><img class="h_image" src="./images/basket.png"></a></li>
+            <!-- <li><a href="cart.php"><img class="h_image" src="./images/basket.png"></a></li> -->
+            <li><a href="cart.php">Cart</a></li>
         </ul>
         <!-- nav bar end -->
     
