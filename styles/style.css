@@ -247,10 +247,58 @@ li.dropdown {
     text-align: center;
 }
 
+.left_p {
+    width: 550px; 
+    float:left;
+    display: block;
+	background-color: #f2f2f2;
+	position: fixed;
+	margin-bottom: 600px;
+    height: 850px;
+	font-size: 30px;
+	margin-top: 0;
+}
+
+.left_p a {
+    display: block;
+	color: black;
+	text-align: center;
+	padding: 15px 15px;
+	text-decoration: none;
+}
+
+.left_p a:hover {
+    background: purple;
+	color: white;
+}
+
+.right_p {
+    background-color: #f2f2f2;
+    width: 550px;
+    height: 850px;
+    font-size: 30px; 
+    margin-right: 160px;
+    float: right;
+}
+
+.right_p a {
+    display: block;
+	color: black;
+	text-align: center;
+	padding: 15px 15px;
+	text-decoration: none;
+}
+
+.right_p a:hover {
+    background: purple;
+	color: white;
+}
+
 .left {
-    width: 1000px; 
+    width: 900px; 
     float:left;
 }
+
 
 .cart {
     width: 1200px;
@@ -278,18 +326,6 @@ li.dropdown {
 	margin-bottom: 600px;
     width: 600px;
     height: 850px;
-	font-size: 30px;
-	margin-top: 0;
-}
-
-.navcat_p {
-	display: block;
-	background-color: green;
-	position: fixed;
-	margin-bottom: 600px;
-    width: 600px;
-    height: 850px;
-    padding: 15px;
 	font-size: 30px;
 	margin-top: 0;
 }

@@ -41,20 +41,21 @@ include "./databse/store_func.php";
                 </div>
             </div>
             <div class="s_right" text-align:"right">
+                <div class="wrapper">
                     <h1 class="h_title">Products</h1>
-                    <div class="navcat_p">
+                    <div class="left_p">
                         <a href="store.php" onclick="return add_cart('Toradora');">ToraDora</a>
                         <a href="store.php" onclick="return add_cart('Toradora');">Vinland saga</a>
                         <a href="store.php" onclick="return add_cart('Toradora');">How not to summon a demon lord</a>
                         <a href="store.php" onclick="return add_cart('Toradora');">Beyond the boundary</a>
                     </div>
-                    <div class="navcat_p_right">
+                    <div class="right_p">
                         <a href="store.php" onclick="return add_cart('Toradora');">Violet Evergarden</a>
                         <a href="store.php" onclick="return add_cart('Toradora');">Shield Hero</a>
                         <a href="store.php" onclick="return add_cart('Toradora');">Konosuba</a>
                         <a href="store.php" onclick="return add_cart('Toradora');">Kimetsu no Yaiba</a>
                     </div>
-                    
+                </div>
                     
                     <?php
                     if (!$cat && !$orig) {
