@@ -1,5 +1,8 @@
 <?php
-    session_start();
+    // session_start();
+
+    // if ($_SESSION['user_id']) {
+    //     $id = $_SESSION['user_id'];
 ?>
 
 <link rel="stylesheet" href="styles/style.css">

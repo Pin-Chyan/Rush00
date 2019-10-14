@@ -1,4 +1,6 @@
 <?php
     session_start();
-    if (iss)
+    if (isset($_SESSION['user_id'])) {
+        
+    }
 ?>

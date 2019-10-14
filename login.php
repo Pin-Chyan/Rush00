@@ -1,6 +1,4 @@
-<?php
-    session_start();
-?>
+
 
 <link rel="stylesheet" href="styles/style.css">
 <html>
@@ -23,7 +21,7 @@
         <!-- Login form start -->
         <div class="wrap">
             <div id="register">
-            <form action="validate.php" method="post">
+            <form action="login.php" method="post">
                 <div class="container">
                     <h1>Register</h1>
                     <p>Please fill in this form to create an account.</p>
