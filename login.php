@@ -1,3 +1,5 @@
+
+
 <link rel="stylesheet" href="styles/style.css">
 <html>
     <head>
@@ -19,10 +21,10 @@
         <!-- Login form start -->
         <div class="wrap">
             <div id="register">
-            <form action="validate.php" method="post">
+            <form action="login.php" method="post">
                 <div class="container">
-                    <h1>Register</h1>
-                    <p>Please fill in this form to create an account.</p>
+                    <h1 class="login_title">Sign-In</h1>
+                    <p class="t_text">Please fill in this form to create an account.</p>
                     <hr>
 
                     <label for="username"><b>Username</b></label>
@@ -37,7 +39,7 @@
                     </div>
                 
                     <div class="container signin">
-                    <p>Dont have an account? <a href="register.php">Register</a>.</p>
+                    <p class="b_text">Dont have an account? <a href="register.php">Register</a>.</p>
                 </div>
                 </form>
             </div>
