@@ -16,5 +16,4 @@ function product_edit($name,$target,$value){
     mysqli_query($db,"UPDATE store SET $target='$value' WHERE product='$name'");
     mysqli_close($db);
 }
-product_edit("waifu_3","product","asuna");
 ?>
