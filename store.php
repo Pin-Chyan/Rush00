@@ -18,10 +18,10 @@
         <!-- wrap start -->
         <div class="wrap">
             <div id="side_store">
-                <p><font color="red">left</font></p>
+                <h1 class="login_title">Category</h1>
             </div>
             <div id="main_store">
-                <p><font color="red">right</font></p>
+                <h1 class="login_title">Images</h1>
             </div>
         </div>
         <!-- wrap end -->

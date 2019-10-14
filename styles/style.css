@@ -47,7 +47,7 @@ b {
 }
 
 .b_text {
-    font-size: 15px;
+    font-size: 25px;
 }
 
 /* button */
@@ -172,19 +172,21 @@ li.dropdown {
 
 #main_store {
     position: relative;
-    background-color: grey;
+    background-color: rgb(241, 241, 245);
     float: right;
-    opacity: 0.4;
-    width: 1300px;
+    opacity: 1;
+    width: 1000px;
     height: 1238px;
+    margin-right: 150px;
 }
 
 #side_store {
     position: absolute;
-    background-color: grey;
-    opacity: 0.2;
-    width: 590px;
+    background-color: rgb(241, 241, 245);
+    opacity: 1;
+    width: 500px;
     height: 1238px;
+    margin-left: 50px;
 }
 
 
@@ -192,10 +194,10 @@ li.dropdown {
 
 #main_cart {
     position: relative;
-    background-color: grey;
+    background-color: rgb(241, 241, 245);
     float: right;
     margin-right: 150px;
-    opacity: 0.4;
+    opacity: 1;
     width: 1000px;
     height: 1238px;
 }
@@ -239,6 +241,7 @@ input[type=text], input[type=password] {
   .container {
     padding: 16px;
     background-color: white;
+    height: auto;
   }
   
   /* Full-width input fields */

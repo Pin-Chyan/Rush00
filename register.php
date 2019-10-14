@@ -24,8 +24,8 @@
             <div id="register">
             <form action="register.php" method="post">
                 <div class="container">
-                    <h1>Register1</h1>
-                    <p>Please fill in this form to create an account.</p>
+                    <h1 class="login_title">Register</h1>
+                    <p class="t_text">Please fill in this form to create an account.</p>
                     <hr>
 
                     <label for="name"><b>Name</b></label>
