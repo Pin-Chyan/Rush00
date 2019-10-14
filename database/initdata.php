@@ -14,9 +14,10 @@ $db = mysqli_connect($host,"server01","memes","death");
 
 //store table
 $product = "product TEXT(200)";
+$id = "id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY";
 $category = "category TEXT(200)";
 $price = "price INT(10)";
-mysqli_query($db,"CREATE TABLE store ($product,$category,$price)");
+mysqli_query($db,"CREATE TABLE store ($product,$id,$category,$price)");
 //store created
 
 //user table
