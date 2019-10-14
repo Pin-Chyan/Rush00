@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            Home Page
+            User Profile
         </title>
     </head>
     <body class="background">
@@ -17,17 +17,13 @@
         <!-- nar bar end -->
 
         <!-- wrap start -->
-        <div class="s_wrapper">
-            <div class="s_left">
+        <div class="l_wrapper">
+            <div class="l_left">
+            <img style="width: 1100px; height: 1000px;" src = "https://images2.alphacoders.com/246/246622.jpg">
             </div>
-            <div class="s_center">
-                <h1 class="h_title">Category</h1>
+            <div class="l_center">
+                <h1 class="h_title">User Profile</h1>
             </div>
-            <div class="s_right">
-                    <h1 class="h_title">Products</h1>
-              </div>    
-            </div>        
         </div>
-        <!-- wrap end -->
     </body>
 </html>

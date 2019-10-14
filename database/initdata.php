@@ -1,6 +1,7 @@
 <?php
-include "./database/store_func.php";
-include "./database/users.php";
+include "store_func.php";
+include "blobs.php";
+include "users.php";
 $host = "localhost:3306";
 $s01 = new mysqli($host,"server01","memes");
 
@@ -10,20 +11,26 @@ mysqli_query($s01,"CREATE DATABASE death");
 $db = mysqli_connect($host,"server01","memes","death");
 
 $id = "id INT(6)";
-$name = "names BLOB";
-mysqli_query($db,"CREATE TABLE blobs ($id,$name)");
+$images = "images TEXT(255)";
+$price = "price INT(10)";
+$disc = "disc TEXT(255)";
+mysqli_query($db,"CREATE TABLE blobs ($id,$images,$price,$disc)");
+
+blobs_add("123456","hello.png","1999","you are such a SCAT");
+
+// product_add("123456","testing","6000");
 
 //store table
 $product = "product TEXT(200)";
 $id = "id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY";
 $category = "category TEXT(200)";
-$price = "price INT(20)";
+$price = "price INT(10)";
 $img = "img TEXT(50)";
 mysqli_query($db,"CREATE TABLE store ($product,$id,$category,$price,$img)");
 //defaults
 product_add("waifu","kawaii,red eyes,tights,long hair","6000","asuna.png");
-product_add("waifu_1","kawaii,blue eyes,no tiddies,short hair","9000","pc.png");
-product_add("waifu_2","hotasfuckingfire,red eyes,katana,long hair","600","cyko.png");
+product_add("waifu_1","kawaii,blue eyes,big tiddies,short hair","9000","pc.png");
+product_add("waifu_2","hotasfuckingfire,red eyes,katana,long hair","60000","cyko.png");
 product_add("waifu_3","kawaii,red eyes,tights,long hair","6000","banana.png");
 //store created
 
@@ -35,7 +42,7 @@ $address = "address TEXT(50)";
 $number = "contact TEXT(10)";
 $email = "email TEXT(50)";
 $password = "password TEXT(50)";
-$admin = "overlord TEXT(5)";
+$admin = "admin TEXT(5)";
 mysqli_query($db,"CREATE TABLE users ($username,$name,$surname,$address,$number,$email,$password,$admin)");
 //defaults
 user_add("WingarKorin","Heini","Barnard","Knowhere","0987654321","hbarnardWTC@yeet.com","inverse","yes");
