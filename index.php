@@ -15,7 +15,7 @@
     <body class="background">
     <!-- nav bar start -->
     <ul>
-        <li><a href="index.php"><Home</a></li>
+        <li><a href="index.php">Home</a></li>
         <li><a href="store.php">Store</a></li>
         <li><a href="login.php"><?php if (isset($_SESSION['name'])) {echo $_SESSION['name'];} else {echo "Sign-in";} ?></a></li>
         <li><a href="cart.php">Cart</a></li>
