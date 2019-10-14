@@ -14,7 +14,7 @@
             <!-- <li><a href="index.php"><img class="h_image" src="images/logo.png"></a></li> -->
             <li><a href="index.php">Home</a></li>
             <li><a href="store.php">Store</a></li>
-            <li><a href="login.php"><?php if (isset($_SESSION['name'])) {echo $_SESSION['name'];} else {echo "Sign-in";} ?></a></li>
+            <li><a href="login.php"><?php if (isset($_SESSION['user_id'])) {echo $_SESSION['user_id'];} else {echo "Sign-in";} ?></a></li>
             <li><a href="cart.php">Cart</a></li>
         </ul>
         <!-- nar bar end -->
