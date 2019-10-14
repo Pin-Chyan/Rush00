@@ -18,12 +18,13 @@ $product = "product TEXT(200)";
 $id = "id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY";
 $category = "category TEXT(200)";
 $price = "price INT(10)";
-mysqli_query($db,"CREATE TABLE store ($product,$id,$category,$price)");
+$img = "img TEXT(50)";
+mysqli_query($db,"CREATE TABLE store ($product,$id,$category,$price,$img)");
 //defaults
-product_add("waifu","kawaii,red eyes,tights,long hair","6000");
-product_add("waifu_1","kawaii,blue eyes,big tiddies,short hair","9000");
-product_add("waifu_2","hotafuckingfire,red eyes,katana,long hair","60000");
-product_add("waifu_3","kawaii,red eyes,tights,long hair","6000");
+product_add("waifu","kawaii,red eyes,tights,long hair","6000","asuana.png");
+product_add("waifu_1","kawaii,blue eyes,big tiddies,short hair","9000","pc.png");
+product_add("waifu_2","hotafuckingfire,red eyes,katana,long hair","60000","cyko.png");
+product_add("waifu_3","kawaii,red eyes,tights,long hair","6000","banana.png");
 //store created
 
 //user table
@@ -52,8 +53,9 @@ mysqli_query($db,"CREATE TABLE history ($date,$user,$items)");
 //cart
 $user = "user TEXT(30)";
 $item = "item TEXT(30)";
+$quan = "quantity INT(10)";
 $price = "price INT(10)";
-mysqli_query($db,"CREATE TABLE cart ($user,$item,$price)");
+mysqli_query($db,"CREATE TABLE cart ($user,$item,$quan,$price)");
 mysqli_close($db);
 mysqli_close($s01);
 
