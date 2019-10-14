@@ -21,9 +21,9 @@ $price = "price INT(10)";
 $img = "img TEXT(50)";
 mysqli_query($db,"CREATE TABLE store ($product,$id,$category,$price,$img)");
 //defaults
-product_add("waifu","kawaii,red eyes,tights,long hair","6000","asuana.png");
+product_add("waifu","kawaii,red eyes,tights,long hair","6000","asuna.png");
 product_add("waifu_1","kawaii,blue eyes,big tiddies,short hair","9000","pc.png");
-product_add("waifu_2","hotafuckingfire,red eyes,katana,long hair","60000","cyko.png");
+product_add("waifu_2","hotasfuckingfire,red eyes,katana,long hair","60000","cyko.png");
 product_add("waifu_3","kawaii,red eyes,tights,long hair","6000","banana.png");
 //store created
 
@@ -40,7 +40,7 @@ mysqli_query($db,"CREATE TABLE users ($username,$name,$surname,$address,$number,
 user_add("waifu","asuna","yuuki","aincrad floor 77","1234567890","asunayuuki@swordart.com","iheartkirito");
 user_add("apex","p","c","N/a","1234567890","PC@csgo.com","waifuisjanedearcfromfate");
 user_add("cyko","liam","krie","kuilsriver","1234567890","CYKO@backend.com","ilikewaifusocks");
-user_add("banana","hand","ofbananas","tree 47 branch 9","1234567890","banana@outsideonabranch.com","R15perkilo");
+user_add("banana","hand","ofbananas","tree 47 branch 9","1234567890","banana@outsideonabranch.com","haha");
 //user table created
 
 //History Pay

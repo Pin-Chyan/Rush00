@@ -32,6 +32,18 @@ function if_registered($username){
             return(1);
         }
     }
+    mysqli_close($db);
     return(0);
+}
+function user_pass($username,$hased_pass){
+    $db = mysqli_connect("localhost:3306","server01","memes","death");
+    $ret = mysqli_query($db,"SELECT password FROM users WHERE username='$username'");
+    $arr = mysqli_fetch_array($ret);
+    if ($arr['password'] == $hased_pass){
+        mysqli_close($db);
+        return (1);
+    }
+    mysqli_close($db);
+    return (0);
 }
 ?>
