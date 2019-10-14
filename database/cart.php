@@ -41,4 +41,27 @@ function add_cart($item){
 //     }
 //     mysqli_close($db); 
 // }
+
+function checkout_cart(){
+    $db = mysqli_connect("localhost:3306","server01","memes","death");
+    $ret = mysqli_query($db,"SELECT item, quantity, price FROM cart WHERE user='login'");
+    if (mysqli_num_rows($ret) > 0){
+        $items = "(";
+        $total = 0;
+        while (($arr = mysqli_fetch_array($ret))){
+            $item = $arr['item'];
+            $price = $arr['price'];
+            $quan = $arr['quantity'];
+            $items .= $item;
+            $items .= "=";
+            $items .= $quan;
+            $items .= " ";
+            $total += $price;
+            mysqli_query($db,"DELETE FROM cart WHERE item='$item'");
+        }
+        $items .= $total.")";
+        mysqli_query($db,"INSERT INTO history (user,items) VALUES ('login','$items')");
+    }
+    mysqli_close($db);
+}
 ?>
