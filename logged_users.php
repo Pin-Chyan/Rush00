@@ -35,6 +35,7 @@
                     get_specfic("<tag>","users","email","</tag><br >", $_SESSION['user_id']);
                 ?>
                 <button type="submit" class="registerbtn" name="reg_user" value="reg"><a href="logout_user.php">Log-Out :(</a></button>
+                <button type="submit" class="registerbtn" name="delete"><a href="delete_user.php">Delete-account :(</a></button>
             </div>
         </div>
     </body>
