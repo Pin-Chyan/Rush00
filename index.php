@@ -1,8 +1,5 @@
 <?php
-    // session_start();
-
-    // if ($_SESSION['user_id']) {
-    //     $id = $_SESSION['user_id'];
+    session_start();
 ?>
 
 <link rel="stylesheet" href="styles/style.css">
@@ -17,7 +14,7 @@
     <ul>
         <li><a href="index.php">Home</a></li>
         <li><a href="store.php">Store</a></li>
-        <li><a href="login.php"><?php if (isset($_SESSION['name'])) {echo $_SESSION['name'];} else {echo "Sign-in";} ?></a></li>
+        <?php if (isset($_SESSION['user_id'])) {echo "<li><a href=\"logged_users.php\">".$_SESSION['user_id']."</a></li>";}else{echo "<li><a href=\"login.php\">Sign-in</a></li>";}?>
         <li><a href="cart.php"><img style="width: 50px; height: 50px;"src="images/basket.png">Cart</a></li>
         <li><a href="admin.php">AdminTest</a></li>
     </ul>
