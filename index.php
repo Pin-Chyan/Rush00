@@ -38,13 +38,8 @@
             <div class="h1_page">
              <ul>
                   <li id="h_button"><a href="store.php">Store</a></li>
-               </ul>
-            </div>
-            <div class="h2_page">
-             <ul>
-                <li id="h_button"><a href="login.php">Log-In</a></li>
             </ul>
-            </div>    
+            </div>
         </div>        
     </div>
     <!-- icons bar end -->
