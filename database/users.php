@@ -49,7 +49,14 @@ function user_pass($username,$hased_pass){
 function is_admin($username)
 {
     $db = mysqli_connect("localhost:3306","server01","memes","death");
-    $ret = mysqli_query($db,"SELECT overlord FROM users");
-
+    $ret = mysqli_query($db,"SELECT overlord FROM users WHERE username=$username");
+    if ($ret == 'yes')
+    {
+        mysqli_close($db);
+        return(1);
+    }
+    mysqli_close($db);
+    return(0);
 }
+
 ?>
