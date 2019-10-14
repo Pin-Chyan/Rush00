@@ -1,7 +1,7 @@
 <?php
 function user_add($username,$name,$surname,$address,$number,$email,$password,$admin){
     if (($db = mysqli_connect("localhost:3306","server01","memes","death")))
-    $part1 = "(username,name,surname,address,contact,email,password,admin)";
+    $part1 = "(username,name,surname,address,contact,email,password,overlord)";
     $part2 = "('$username','$name','$surname','$address','$number','$email','$password','$admin')";
     mysqli_query($db,"INSERT INTO users $part1 VALUES $part2");
     mysqli_close($db);
@@ -45,5 +45,11 @@ function user_pass($username,$hased_pass){
     }
     mysqli_close($db);
     return (0);
+}
+function is_admin($username)
+{
+    $db = mysqli_connect("localhost:3306","server01","memes","death");
+    $ret = mysqli_query($db,"SELECT overlord FROM users");
+
 }
 ?>

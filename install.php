@@ -17,13 +17,13 @@ mysqli_query($db,"CREATE TABLE blobs ($id,$name)");
 $product = "product TEXT(200)";
 $id = "id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY";
 $category = "category TEXT(200)";
-$price = "price INT(10)";
+$price = "price INT(20)";
 $img = "img TEXT(50)";
 mysqli_query($db,"CREATE TABLE store ($product,$id,$category,$price,$img)");
 //defaults
 product_add("waifu","kawaii,red eyes,tights,long hair","6000","asuna.png");
-product_add("waifu_1","kawaii,blue eyes,big tiddies,short hair","9000","pc.png");
-product_add("waifu_2","hotasfuckingfire,red eyes,katana,long hair","60000","cyko.png");
+product_add("waifu_1","kawaii,blue eyes,no tiddies,short hair","9000","pc.png");
+product_add("waifu_2","hotasfuckingfire,red eyes,katana,long hair","600","cyko.png");
 product_add("waifu_3","kawaii,red eyes,tights,long hair","6000","banana.png");
 //store created
 
@@ -35,7 +35,7 @@ $address = "address TEXT(50)";
 $number = "contact TEXT(10)";
 $email = "email TEXT(50)";
 $password = "password TEXT(50)";
-$admin = "admin TEXT(5)";
+$admin = "overlord TEXT(5)";
 mysqli_query($db,"CREATE TABLE users ($username,$name,$surname,$address,$number,$email,$password,$admin)");
 //defaults
 user_add("WingarKorin","Heini","Barnard","Knowhere","0987654321","hbarnardWTC@yeet.com","inverse","yes");
