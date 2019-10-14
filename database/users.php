@@ -23,5 +23,15 @@ function get_val($username,$value){
     echo $ret2[$value];
     mysqli_close($db);
 }
-
+function if_registered($username){
+    $db = mysqli_connect("localhost:3306","server01","memes","death");
+    $ret = mysqli_query($db,"SELECT username FROM users");
+    while(($ret2 = mysqli_fetch_array($ret))){
+        if ($ret2['username'] == $username){
+            mysqli_close($db);
+            return(1);
+        }
+    }
+    return(0);
+}
 ?>
