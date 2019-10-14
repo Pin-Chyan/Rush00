@@ -63,5 +63,5 @@ function checkout_cart(){
         mysqli_query($db,"INSERT INTO history (user,items) VALUES ('login','$items')");
     }
     mysqli_close($db);
-}
+} 
 ?>
