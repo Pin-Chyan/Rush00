@@ -5,7 +5,7 @@
 <html>
     <head>
         <title>
-            User Profile1
+            User Profile4
         </title>
     </head>
     <body class="background">
@@ -27,9 +27,7 @@
             <div class="l_center">
                 <h1 class="h_title">User Profile</h1>
                 <?php
-                    $db = mysqli_connect("localhost:3306","server01","memes","death");
-                    $current = mysqli_query($db, "SELECT username FROM users");
-                    echo "<h1 class='h_title'>This (get_val($current)) Bitch</h1>";
+                    get_specific("<table>", "users", "username", "</table>");
                 ?>
             </div>
         </div>
