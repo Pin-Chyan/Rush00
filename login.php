@@ -33,11 +33,11 @@
 
                     <hr>
 
-                    <button type="submit" class="registerbtn">Register</button>
+                    <button type="submit" class="registerbtn">Sign in</button>
                     </div>
                 
                     <div class="container signin">
-                    <p>Already have an account? <a href="register.php">Sign in</a>.</p>
+                    <p>Dont have an account? <a href="register.php">Register</a>.</p>
                 </div>
                 </form>
             </div>
