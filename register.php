@@ -77,7 +77,7 @@
             return ;
         }
         // add user
-        user_add($_POST['username'],$_POST['name'],$_POST['surname'],$_POST['address'],$_POST['number'],$_POST['email'],hash("sha1",$_POST['pass']));
+        user_add($_POST['username'],$_POST['name'],$_POST['surname'],$_POST['address'],$_POST['number'],$_POST['email'],hash("sha1",$_POST['pass']),"no");
         // session_start();
         // $_SESSION['user'] = $_POST['username'];
         header('location: index.php');
