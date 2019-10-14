@@ -1,7 +1,7 @@
 <?php
 
     function valid_number($nb) {
-        return (isset($nb) and preg_match('/\d\d\d)(-)?\d\d\d(-)?\d\d\d\d/', $nb));
+        return (preg_match('/\d\d\d\d\d\d\d\d\d\d/', $nb));
     }
 
     function pass_match ($pass, $cmp_pass) {

@@ -19,7 +19,7 @@
         <!-- Login form start -->
         <div class="wrap">
             <div id="register">
-            <form action="register.php">
+            <form action="validate.php" method="post">
                 <div class="container">
                     <h1>Register</h1>
                     <p>Please fill in this form to create an account.</p>
