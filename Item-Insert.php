@@ -1,10 +1,6 @@
 <link rel="stylesheet" href="styles/style.css">
 <html>
     <head>
-        <?php
-            include('database/users.php');
-            include('validate.php');
-        ?>
         <title>
             log-in
         </title>
@@ -23,8 +19,8 @@
         <div class="wrap">
             <div id="register">
                 <form action="register.php" method="post">
-                    <div class="container">
-                    <h1 class="login_title">Register</h1>
+                <div class="container">
+                    <h1 class="login_title">Item Insert</h1>
                     <p class="t_text">Please fill in this form to create an account.</p>
                     <hr>
 
@@ -58,28 +54,10 @@
                 
                     <div class="container signin">
                     <p class="b_text">Already have an account? <a href="login.php">Log-In</a>.</p>
-                    </div>
+                </div>
                 </form>
             </div>
         </div>
         <!-- wrap end -->
     </body>
 </html>
-
-<?php
-    if (isset($_POST['reg_user'])) {
-        if ($_POST['pass'] !== $_POST['pass-repeat']) {
-            echo "<script>alert('Passwords don't match');</script>";
-            return ;
-        }
-        if (!valid_number($_POST['number'])) {
-            echo "<script>alert('Wrong phone format');</script>";
-            return ;
-        }
-        // add user
-        user_add($_POST['username'],$_POST['name'],$_POST['surname'],$_POST['address'],$_POST['number'],$_POST['email'],hash("sha1",$_POST['pass']));
-        // session_start();
-        // $_SESSION['user'] = $_POST['username'];
-        header('location: index.php');
-    }
-?>
