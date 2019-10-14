@@ -19,7 +19,6 @@
         <!-- wrap start -->
         <div class="s_wrapper">
             <div class="s_left">
-            <img style="width: 1100px; height: 1000px;" src = "https://images2.alphacoders.com/246/246622.jpg">
             </div>
             <div class="s_center">
                 <h1 class="h_title">Category</h1>

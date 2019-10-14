@@ -138,7 +138,10 @@ li.dropdown {
 }
 
 .s_left {
-    width: 500px; 
+    background-image: url("https://images2.alphacoders.com/246/246622.jpg");
+    background-size: 1100px 1000px;
+    background-repeat: no-repeat;
+    width: 550px; 
     height: 1000px;
     float:left;
 }
@@ -150,6 +153,8 @@ li.dropdown {
     display: block;
     margin-left: 80px;
     float: left;
+    border: 5px;
+    border-color: #333;
 }
 
 .s_right {
