@@ -161,12 +161,36 @@ li.dropdown {
     width: 1200px;
     height: 1000px;
     border: 10px;
+    position: relative;
     color: black;
     background-color: #DCDCDC;
     display: block;
-    margin-left: 30px;
+    margin-left: 70px;
     float: left;
   }
+
+.s_right_inside {
+    width: 600px;
+    height: 600px;
+    border: 10px;
+    color: black;
+    position: relative;
+    background-color: green;
+    display: block;
+    margin-left: 70px;
+}
+
+.s_left_inside {
+    width: 600px;
+    height: 600px;
+    border: 10px;
+    color: black;
+    list-style-type: disc;
+    position: absolute;
+    background-color: green;
+    display: block;
+    margin-left: 70px;
+}
 
   /* start of logged_users bg */
 .l_wrapper {
@@ -258,6 +282,47 @@ li.dropdown {
 	margin-top: 0;
 }
 
+.navcat_p {
+	display: block;
+	background-color: green;
+	position: fixed;
+	margin-bottom: 600px;
+    width: 600px;
+    height: 850px;
+    padding: 15px;
+	font-size: 30px;
+	margin-top: 0;
+}
+
+.navcat_p_right {
+	display: block;
+	background-color: green;
+	position: relative;
+	margin-bottom: 600px;
+    width: 600px;
+    height: 850px;
+    padding: 15px;
+	font-size: 30px;
+    margin-top: 0;
+    float: left;
+}
+
+.navcat_p_right a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 15px 15px;
+	text-decoration: none;
+}
+
+.navcat_p a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 15px 15px;
+	text-decoration: none;
+}
+
 .navcat a {
 	display: block;
 	color: black;
@@ -275,6 +340,16 @@ li.dropdown {
 	text-decoration: none;
 	font-size: 15px;
 	margin: 0;
+}
+
+.navcat_p a:hover {
+	background: purple;
+	color: white;
+}
+
+.navcat_p_right a:hover {
+	background: purple;
+	color: white;
 }
 
 .navcat a:hover {

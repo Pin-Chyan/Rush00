@@ -1,5 +1,6 @@
 <?php
 session_start();
+include "./databse/store_func.php";
 ?>
 <link rel="stylesheet" href="styles/style.css">
 <html>
@@ -28,19 +29,33 @@ session_start();
             <div class="s_center">
                 <h1 class="h_title">Category</h1>
                 <div class="navcat">
-                <a href="index.php?view=store&cat=Romantic">Romantic</a>
-                <a href="&cat=Comedy">Comedy</a>
-                <a href="&cat=Adventure">Adventure</a>
-                <a href="&cat=Action">Action</a>
-                <a href="&cat=Fantasy">Fantasy</a>
-                <a href="&cat=Isekai">Isekai</a>
-                <a href="&cat=Anime">Anime</a>
-                <a href="&cat=Manga">Manga</a>
-                <a href="#" style="margin-top: 250px;"><b>RESET FILTER</b></a>
+                <a href="store.php?cat=Romantic">Romantic</a>
+                <a href="store.php?cat=Comedy">Comedy</a>
+                <a href="store.php?cat=Adventure">Adventure</a>
+                <a href="store.php?cat=Action">Action</a>
+                <a href="store.php?cat=Fantasy">Fantasy</a>
+                <a href="store.php?cat=Isekai">Isekai</a>
+                <a href="store.php?cat=Anime">Anime</a>
+                <a href="store.php?cat=Manga">Manga</a>
+                <a href="store.php" style="margin-top: 250px;"><b>RESET FILTER</b></a>
                 </div>
             </div>
-            <div class="s_right">
+            <div class="s_right" text-align:"right">
                     <h1 class="h_title">Products</h1>
+                    <div class="navcat_p">
+                        <a href="store.php" onclick="return add_cart('Toradora');">ToraDora</a>
+                        <a href="store.php" onclick="return add_cart('Toradora');">Vinland saga</a>
+                        <a href="store.php" onclick="return add_cart('Toradora');">How not to summon a demon lord</a>
+                        <a href="store.php" onclick="return add_cart('Toradora');">Beyond the boundary</a>
+                    </div>
+                    <div class="navcat_p_right">
+                        <a href="store.php" onclick="return add_cart('Toradora');">Violet Evergarden</a>
+                        <a href="store.php" onclick="return add_cart('Toradora');">Shield Hero</a>
+                        <a href="store.php" onclick="return add_cart('Toradora');">Konosuba</a>
+                        <a href="store.php" onclick="return add_cart('Toradora');">Kimetsu no Yaiba</a>
+                    </div>
+                    
+                    
                     <?php
                     if (!$cat && !$orig) {
                         $products = db_get_products();

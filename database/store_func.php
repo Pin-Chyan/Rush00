@@ -20,8 +20,6 @@ function product_ret($product,$target){
     $db = mysqli_connect("localhost:3306","server01","memes","death");
     $res = mysqli_query($db,"SELECT $target FROM store WHERE product='$product'");
     $res2 = mysqli_fetch_array($res);
-    if ($target == 'img')
-        echo "$res2[target]";
     echo $res2[$target];
     echo"\n";
 }
