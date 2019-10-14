@@ -17,10 +17,30 @@
         <!-- nar bar end -->
 
         <!-- wrap start -->
-        <div class="wrap">
+        <div class="wrapper">
+            <div class="left">
             <div id="side_store">
                 <h1 class="h_title">Category</h1>
             </div>
+            </div>
+            <div class="center">
+            <img style="width: 1100px; height: 1000px;" src = "https://images2.alphacoders.com/246/246622.jpg">
+            </div>
+            <div class="right">
+                <div class="h1_page">
+                <ul>
+                     <li id="h_button"><a href="store.php">Store</a></li>
+                   </ul>
+                  </div>
+                 <div class="h2_page">
+              <ul>
+                    <li id="h_button"><a href="login.php">Log-In</a></li>
+              </ul>
+              </div>    
+            </div>        
+        </div>
+        <div class="wrap">
+
             <div id="main_store">
                 <h1 class="h_title">Products</h1>
             </div>
