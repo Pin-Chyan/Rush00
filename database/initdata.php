@@ -35,7 +35,7 @@ $address = "address TEXT(50)";
 $number = "contact TEXT(10)";
 $email = "email TEXT(50)";
 $password = "password TEXT(50)";
-$admin = "Admin TEXT(5)";
+$admin = "admin TEXT(5)";
 mysqli_query($db,"CREATE TABLE users ($username,$name,$surname,$address,$number,$email,$password,$admin)");
 //defaults
 user_add("WingarKorin","Heini","Barnard","Knowhere","0987654321","hbarnardWTC@yeet.com","inverse","yes");
