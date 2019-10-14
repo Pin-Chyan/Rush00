@@ -35,6 +35,21 @@ footer, header, hgroup, menu, nav, section {
     height: 50px;
 }
 
+/* bold format */
+
+b {
+    color: black;
+    font-size: 20px;
+}
+
+.t_text {
+    font-size: 25px;
+}
+
+.b_text {
+    font-size: 15px;
+}
+
 /* button */
 
 ul {
@@ -204,6 +219,7 @@ li.dropdown {
     margin-bottom: 40px;
     font-size: 75px;
 }
+
 input[type=text], input[type=password] {
     border-radius: 14px;
     padding: 30px;
@@ -256,6 +272,7 @@ input[type=text], input[type=password] {
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
+    font-size: 15px;
   }
   
   .registerbtn:hover {

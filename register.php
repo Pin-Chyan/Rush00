@@ -57,7 +57,7 @@
                     </div>
                 
                     <div class="container signin">
-                    <p>Already have an account? <a href="login.php">Log-In</a>.</p>
+                    <p class="b_text">Already have an account? <a href="login.php">Log-In</a>.</p>
                 </div>
                 </form>
             </div>
