@@ -1,6 +1,7 @@
 <?php
 session_start();
 include "./databse/store_func.php";
+include "database/cart.php";
 ?>
 <link rel="stylesheet" href="styles/style.css">
 <html>
@@ -44,7 +45,7 @@ include "./databse/store_func.php";
                 <div class="wrapper">
                     <h1 class="h_title">Products</h1>
                     <div class="left_p">
-                        <a href="store.php" onclick="return add_cart('Toradora');">ToraDora</a>
+                        <a href="store.php" oneclick="return add_cart('Toradora');">1Tora3Dora</a>
                         <a href="store.php" onclick="return add_cart('Toradora');">Vinland saga</a>
                         <a href="store.php" onclick="return add_cart('Toradora');">How not to summon a demon lord</a>
                         <a href="store.php" onclick="return add_cart('Toradora');">Beyond the boundary</a>
